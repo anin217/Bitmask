@@ -26,7 +26,7 @@ ll solve(ll bm,ll i,ll j,ll n)
          {
            if((bm>>k&1)==0)
              {
-                ret=min(ret,solve(bm|(1<<k),k,i,n)+(tmp^arr[k])*p[pos]);
+                ret=min(ret,solve(bm|(1<<k),j,k,n)+(tmp^arr[k])*p[pos]);
              }
          }
          dp[bm][i][j]=ret;
